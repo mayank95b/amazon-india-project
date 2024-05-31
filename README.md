@@ -36,3 +36,25 @@ it helps us avoid naming conflicts
 2. Export
 
 3. Import
+
+
+## External Libraries
+
+### dayjs
+
+Day.js is a minimalist JavaScript library that parses, validates, manipulates, and displays dates and times for modern browsers with a largely Moment.js-compatible API.
+
+Calling dayjs() with parameters returns a fresh Day.js object with the current date and time.
+
+    var = now = dayjs()
+
+
+#### List of all available formats
+
+| Format        | Output            |  Description      |
+| ------       |   -----------      | ----------        |
+|    YY        |       18           | Two-digit year    |
+|   YYYY       |    2018            |  Four-digit yeay  |
+|   M          |    1-12            |  The month, beginning at 1|
+|   MM         |  01-12             |  Yhe month, 2-digits |
+
