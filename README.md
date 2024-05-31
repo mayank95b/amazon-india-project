@@ -1,6 +1,9 @@
 # amazon-india-project
 
-
+## Important Steps in every Javascript code
+1. Save the data
+2. Generate the HTML
+3. Make it interactive
 
 
 
