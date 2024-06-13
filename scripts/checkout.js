@@ -3,16 +3,12 @@ import { products } from "../data/products.js";
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 import {deliveryOptions} from '../data/deliveryOptions.js'
 
-
-
-
 const today = dayjs();
 const deliveryDate = today.add(7, 'days');
 const dateString = deliveryDate.format('dddd, MMMM D');
 
 
 function renderOrderSummary() {
-
   let cartSummaryHTML = '';
 
   cart.forEach((cartItem) => {
@@ -35,6 +31,10 @@ function renderOrderSummary() {
         deliveryOption = option;
       }
     });
+
+    const today = dayjs();
+    const deliveryDate = today.add(deliveryOption.deliveryDays, 'days');
+    const dateString = deliveryDate.format('dddd, MMMM D');
 
     cartSummaryHTML += `
       <div class="cart-item-container js-cart-item-container-${matchingProduct.id}">
